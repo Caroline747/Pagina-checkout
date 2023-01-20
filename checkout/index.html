@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" href="/Imagens/shopping-cart.svg">
+    <title>Checkout</title>
+</head>
+<body>
+    <div class="container">
+        <div class="form-image">
+        
+            <img src="Imagens/pay-online.svg">
+        
+        </div>
+    <div class="form">
+        <form action="#">
+            <div class="form-header">
+                <div class="title">
+                    <h1>Detalhes do Pagamento</h1>
+              </div>
+           </div>
+
+            <div class="gender-inputs">
+              <div class="gender-title">
+                <h6>Forma de Pagamento:</h6><br>
+              </div>
+
+              <!--Metodo de pagamento
+              <div class="payment-method">
+                <label for="card" class="method card">
+                  <div class="card-logos">
+                    <img src="https://designmodo.com/demo/checkout-panel/img/visa_logo.png"/>
+                    <img src="https://designmodo.com/demo/checkout-panel/img/mastercard_logo.png"/>
+                  </div>
+           
+                  <div class="radio-input">
+                    <input id="card" type="radio" name="payment">
+                    Pague com Cartão de Credito
+                  </div>
+                </label>
+           
+                <label for="paypal" class="method paypal">
+                  <img src="https://designmodo.com/demo/checkout-panel/img/paypal_logo.png"/>
+                  <div class="radio-input">
+                    <input id="paypal" type="radio" name="payment">
+                    Pague com PayPal
+                  </div>
+                </label>
+              </div>-->
+
+              <div class="input-group">
+
+               <label class="pagamento">Escolha a opção de pagamento</label>
+                  <select id="pagamento" name="pagamento">
+                    <option value="Cartão de Credito">Cartão de Credito</option>
+                    <option value="Cartão de Debito">Cartão de Debito</option>
+                  </select>
+
+                <div class="input-box">
+                      <label for="cardname">Numero do Cartão</label>
+                      <input type="number" name="cardname" id="cardname" placeholder="Digite o numero do cartão" required>
+                </div>
+
+                <div class="input-box">
+                  <label for="cardname">Nome Completo</label>
+                  <input type="name" name="cardname" id="cardname" placeholder="Digite o seu nome" required>
+                </div>
+
+                <div class="input-box">
+                  <label for="cupom">Cupom de Desconto</label>
+                  <input type="number" name="cupom" id="cupom" placeholder="Digite o seu cupom" required>
+                </div>
+
+                <div class="input-box">
+                    <label for="validade">Validade</label>
+                    <input type="date" name="validade" id="validade" placeholder="Digite a Validade" required>
+                </div>
+
+                <div class="input-box">
+                  <label for="codigo">CVV / CVC*</label>
+                  <input type="number" name="código" id="codigo" placeholder="Digite o código do Cartão" required>
+                </div>
+
+                <span class="info">* CVV ou CVC é o código de segurança do cartão, número único de três dígitos no verso do seu cartão separado do seu número.</span>
+             </div> 
+
+           <div class="continue-button">
+                <button><a href="#">Finalizar a compra agora</a></button>
+           </div>
+           
+        </form>
+      </div>  
+    </div>
+
+    
+
+</body>
+</html>
